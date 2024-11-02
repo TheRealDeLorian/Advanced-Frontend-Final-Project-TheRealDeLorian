@@ -40,3 +40,6 @@
   - websockets
   - browser API outside of the requirements
 
+
+
+Mapped out temples. click on the dot and it pulls up a picture
