@@ -1,5 +1,5 @@
 # Final Project Proposal
-1. Elevator pitch: It's like a journal for members of the Church of Jesus Christ of Latter-day Saints to keep track of going to the temple. They can make journal entries and keep track of which temples they've been to.
+1. Elevator pitch: Temple attendance tracker. It's like a journal for members of the Church of Jesus Christ of Latter-day Saints to keep track of the temples they've attended.
 2. Dorian Cottle is the only contributor
 3. Features (rough list):
     - Track which temples you've been to and when
