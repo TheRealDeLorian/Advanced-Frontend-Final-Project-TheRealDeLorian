@@ -1,6 +1,4 @@
 # Final Project Proposal
-
-## Proposal
 1. Elevator pitch: It's like a journal for members of the Church of Jesus Christ of Latter-day Saints to keep track of going to the temple. They can make journal entries and keep track of which temples they've been to.
 2. Dorian Cottle is the only contributor
 3. Features (rough list):
