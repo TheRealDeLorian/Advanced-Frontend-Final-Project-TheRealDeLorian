@@ -11,22 +11,213 @@
     - How to ask for the user's location in React
 
 ## Goals by Week
-- [x] Nov 6
+
+### Nov 6
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+
+#### Feature checklist on this date
     - [ ] Authentication set up
-- [ ] Nov 9
-    - [ ] CICD (runs on kube) 
-    - [ ] Error page set up
-- [ ] Nov 13
-    - [ ] Database set up
-    - [ ] CRUD functions and API created
-- [ ] Nov 16
-    - [ ] Home page displays all temples
-    - [ ] Users can log in and select temples they've been to and it saves to their account
-- [ ] Nov 20
-    - [ ] Users can log a temple visit including uploading photos and write a journal entry about the experience
-- [ ] Nov 23
-- [ ] Nov 26
-- [ ] Dec 4
+
+### Nov 9
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+
+#### Feature checklist on this date
+
+
+### Nov 13
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+#### Feature checklist on this date
+ 
+
+### Nov 16
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+#### Feature checklist on this date
+
+
+### Nov 20
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+#### Feature checklist on this date
+
+
+### Nov 23
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+#### Feature checklist on this date
+
+### Nov 26
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+#### Feature checklist on this date
+
+### Dec 4
+#### Rubric status on this date
+| Points | Section | Requirement |
+| ------ | ----- | ---------- |
+| /20 | General | Professional, organized and smooth experience
+| /30 | Scope | is 2 to 3 times larger than Inventory Management
+| /5 | Experience | all experiences mobile friendly
+| /5 | Experience | 3 instances where elements reorder themselves on smaller screens
+| /5 | Technology | use local storage
+| /5 | Technology | Client side state stores (e.g. tanstack query or context)
+| /5 | Technology | Toasts / global notifications or alerts
+| /5 | Technology | Error handling (both on api requests and render errors)
+| /5 | Technology | Network Calls that read and write data
+| /5 | Technology | Developer type helping (typescript)
+| /5 | Technology | 10+ pages or views
+| /5 | Technology | CI/CD pipeline
+| /5 | Technology | tests run in pipeline, pipeline aborts if they fail
+| /5 | Technology | linting in pipeline
+| /9 | Technology | 3+ generic form input components
+| /12 | Technology | 4+ generic layout components
+| /10 | Technology | authentication and user account support
+| /5 | Technology | authorized pages and public pages
+
+#### Feature checklist on this date
 
 
 ## All features/tasks
