@@ -11,24 +11,8 @@
     - How to ask for the user's location in React
 
 ## Goals by Week
-- [x] Nov 6
-    - [ ] Authentication set up
-- [ ] Nov 9
-    - [ ] CICD (runs on kube) 
-    - [ ] Error page set up
-- [ ] Nov 13
-    - [ ] Database set up
-    - [ ] CRUD functions and API created
-- [ ] Nov 16
-    - [ ] Home page displays all temples
-    - [ ] Users can log in and select temples they've been to and it saves to their account
-- [ ] Nov 20
-    - [ ] Users can log a temple visit including uploading photos and write a journal entry about the experience
-- [ ] Nov 23
-- [ ] Nov 26
-- [ ] Dec 4
+### Nov 6
+#### Rubric status on this date
 
 
-## All features/tasks
-
-
+#### Feature checklist on this date

@@ -5,7 +5,7 @@
 - 2 pages
 - 1 set of CRUD functions
 - Features: 
-  - {upload, view, delete photos and edit photo details} (one main feature with 4 sub-features)
+  - upload, view, delete photos and edit photo details (one main feature with 4 sub-features)
 
 ### Technology
 - Use of Local Storage
