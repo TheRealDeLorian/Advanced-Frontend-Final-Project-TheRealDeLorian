@@ -20,4 +20,12 @@ spec:
         image: doriancottle/sacredsteps:${IMAGE_TAG}  
         ports:
         - containerPort: 80
- 
+        env:
+        - name: POSTGRES_HOST
+          value: dorian-db-svc
+        - name: POSTGRES_USER
+          value: test-user
+        - name: POSTGRES_PASSWORD
+          value: test-password
+        - name: POSTGRES_DB
+          value: db

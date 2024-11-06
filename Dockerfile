@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 
 # ENV VITE_API_URL http://api.sacredsteps.duckdns.org
-ENV VITE_REDIRECT_URI http://localhost:5173
+ENV VITE_REDIRECT_URI https://sacredsteps.duckdns.org
 RUN npm run build
  
 FROM nginx
