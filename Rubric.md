@@ -1,3 +1,5 @@
+> This copy of the rubric represents what I believe is the current status of the project
+
 | Points | Section     | Requirement                                         |
 |--------|-------------|-----------------------------------------------------|
 | /20    | General     | Professional, organized and smooth experience       |

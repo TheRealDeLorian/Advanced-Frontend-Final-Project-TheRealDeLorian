@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  namespace: sacredsteps
+  name: sacredsteps-vite-ingress
+spec: 
+  ingressClassName: nginx
+  rules: 
+  - host: sacredsteps.duckdns.org
+    http: 
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: sacredsteps-vite-app-svc
+            port:
+              number: 80

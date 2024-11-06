@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: sacredsteps
+  name: sacredsteps-vite-app
+  labels:
+    app: sacredsteps-vite-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sacredsteps-vite-app
+  template:
+    metadata:
+      labels:
+        app: sacredsteps-vite-app
+    spec:
+      containers:
+      - name: sacredsteps-vite-app
+        image: doriancottle/sacredsteps:${IMAGE_TAG}  
+        ports:
+        - containerPort: 80
+ 
