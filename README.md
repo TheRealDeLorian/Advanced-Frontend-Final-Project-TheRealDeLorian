@@ -12,6 +12,7 @@
 
 ## Goals by Week
 ### Nov 6
+### Projected
 #### Feature checklist on this date
 - [ ] Users can create an account
 - [ ] Users can log in
@@ -47,6 +48,44 @@
 | 2/10    | Technology  | Authentication and user account support             |
 | 0/5     | Technology  | Authorized pages and public pages                   |
 | 23/146  | Total       |                                                     |
+
+### Actual
+#### Feature checklist on this date
+- [ ] Users can create an account
+- [x] Users can log in
+- [x] Site is accessible from a duckdns subdomain
+- [ ] Users are brought to an error page if something goes wrong
+- [ ] Data is retrieved from the database when you visit the site
+- [ ] Data is displayed on the site after retrieval
+- [ ] Home page displays all temples
+- [ ] Logged in users can select temples they've been to and it saves progress to their account
+- [ ] Users can log a temple visit including uploading photos and write a journal entry about the experience and that data is there when they come back.
+- [ ] Settings page with location toggling, notifications toggling, Set your default temple
+- [ ] "temple encyclopedia" Page with a list of temples and facts about them
+
+#### Rubric status on this date
+| Points | Section     | Requirement                                         |
+|--------|-------------|-----------------------------------------------------|
+| 2/20    | General     | Professional, organized and smooth experience       |
+| 2/30    | Scope       | is 2-3 times larger than directory                  |
+| 0/5     | Experience  | All experiences mobile-friendly                     |
+| 0/5     | Experience  | 3 instances where elements reorder on smaller screens |
+| 0/5     | Technology  | Use local storage                                   |
+| 0/5     | Technology  | Client-side state stores (e.g., TanStack Query or Context) |
+| 0/5     | Technology  | Toasts / global notifications or alerts             |
+| 0/5     | Technology  | Error handling (both on API requests and render errors) |
+| 3/5     | Technology  | Network calls that read and write data              |
+| 5/5     | Technology  | Developer type helping (TypeScript)                 |
+| 0/5     | Technology  | 10+ pages or views                                  |
+| 5/5     | Technology  | CI/CD pipeline                                      |
+| 5/5     | Technology  | Tests run in pipeline, pipeline aborts if they fail |
+| 3/5     | Technology  | Linting in pipeline                                 |
+| 0/9     | Technology  | 3+ generic form input components                    |
+| 0/12    | Technology  | 4+ generic layout components                        |
+| 2/10    | Technology  | Authentication and user account support             |
+| 0/5     | Technology  | Authorized pages and public pages                   |
+| 23/146  | Total       |                                                     |
+
 
 
 
