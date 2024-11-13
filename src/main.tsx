@@ -3,6 +3,9 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
 import { AuthProvider, AuthProviderProps } from "react-oidc-context";
+import { QueryClientProvider } from "react-query";
+import { getQueryClient } from './services/queryClient';
+
 
 const uri = import.meta.env.VITE_REDIRECT_URI;
 
@@ -22,10 +25,14 @@ const oidcConfig: AuthProviderProps = {
   automaticSilentRenew: true,
 };
 
+const queryClient = getQueryClient();
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AuthProvider {...oidcConfig}>
+    <QueryClientProvider client={queryClient}>
       <App />
+      </QueryClientProvider>
     </AuthProvider>
   </StrictMode>
 );

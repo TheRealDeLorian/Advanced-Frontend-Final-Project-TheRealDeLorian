@@ -1,8 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:5083";
-
-
+const baseUrl = import.meta.env.VITE_API_URL;
 
 export const callAuthApiEndpoint = async (id_token: string) => {
   try {
