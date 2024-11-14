@@ -1,7 +1,7 @@
 import axios from "axios";
 import { Temple } from "../data/Temple";
 
-const baseUrl = import.meta.env.VITE_API_URL;
+const baseUrl = import.meta.env.VITE_API_URL + "/api";
 
 
 export const templeService = {
