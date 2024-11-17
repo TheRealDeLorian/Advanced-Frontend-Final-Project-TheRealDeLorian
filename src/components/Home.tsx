@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import LoginButton from '../LoginButton'
 import { useGetAllTemplesQuery } from "../hooks/templeHooks";
+import toast from 'react-hot-toast';
 
 function App() {
   const templesQuery = useGetAllTemplesQuery();
@@ -14,6 +15,7 @@ function App() {
   }
 
   if (templesQuery.isLoading) {
+    toast.loading("Loading temples...");
     return (
       <div className="">
         loading...

@@ -1,7 +1,7 @@
 - [ ] Users can create an account
 - [x] Users can log in
 - [x] Site is accessible from a duckdns subdomain
-- [ ] Users are brought to an error page if something goes wrong
+- [x] Users are brought to an error page if something goes wrong
 - [x] Data is retrieved from the database when you visit the site
 - [x] Data is displayed on the site after retrieval
 - [x] Home page displays all temples
