@@ -1,14 +1,15 @@
-import './App.css'
-import Home from './components/Home';
+import "./App.css";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Home from "./components/Home";
 
 function App() {
-
   return (
     <>
-    <Home></Home>
+      <ErrorBoundary fallback={<div>Oops! An error has occurred.</div>}>
+        <Home />
+      </ErrorBoundary>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
