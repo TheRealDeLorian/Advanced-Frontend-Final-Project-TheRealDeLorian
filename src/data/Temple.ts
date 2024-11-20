@@ -10,3 +10,4 @@ export type Temple = {
   year_built: string;
   year_dedicated: string;
 };
+
