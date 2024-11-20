@@ -9,3 +9,7 @@
 - [ ] Users can log a temple visit including uploading photos and write a journal entry about the experience and that data is there when they come back.
 - [ ] Settings page with location toggling, notifications toggling, Set your default temple
 - [ ] "temple encyclopedia" Page with a list of temples and facts about them
+
+
+- [ ] Design home page to look how I want it 
+- [ ] Make database schema for more detailed temples
