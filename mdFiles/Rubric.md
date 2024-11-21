@@ -2,9 +2,9 @@
 
 | Points | Section     | Requirement                                         |
 |--------|-------------|-----------------------------------------------------|
-| 3/20    | General     | Professional, organized and smooth experience       |
-| 2/30    | Scope       | is 2-3 times larger than directory                  |
-| 0/5     | Experience  | All experiences mobile-friendly                     |
+| 5/20    | General     | Professional, organized and smooth experience       |
+| 3/30    | Scope       | is 2-3 times larger than directory                  |
+| 1/5     | Experience  | All experiences mobile-friendly                     |
 | 0/5     | Experience  | 3 instances where elements reorder on smaller screens |
 | 0/5     | Technology  | Use local storage                                   |
 | 5/5     | Technology  | Client-side state stores (e.g., TanStack Query or Context) |
@@ -20,4 +20,4 @@
 | 0/12    | Technology  | 4+ generic layout components                        |
 | 6/10    | Technology  | Authentication and user account support             |
 | 0/5     | Technology  | Authorized pages and public pages                   |
-| 42/146  | Total       |                                                     |
+| 45/146  | Total       |                                                     |
