@@ -7,6 +7,7 @@ function App() {
     setHasError(true);
   };
   if (hasError) {
+    throwError();
     throw new Error("Manually thrown error after button click!");
   }
 
