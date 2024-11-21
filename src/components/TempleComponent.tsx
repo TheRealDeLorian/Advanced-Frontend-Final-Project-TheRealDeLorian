@@ -1,4 +1,3 @@
-import React from "react";
 import { Temple } from "../data/Temple";
 
 export const TempleComponent = (temple: Temple) => {

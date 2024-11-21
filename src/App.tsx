@@ -1,5 +1,4 @@
 import { Toaster } from "react-hot-toast";
-import "./App.css";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Home from "./components/Home";
 

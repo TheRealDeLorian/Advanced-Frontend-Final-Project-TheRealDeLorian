@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useAuth } from "react-oidc-context";
 
 export const LoginButton = () => {
@@ -20,7 +19,7 @@ export const LoginButton = () => {
         return (
             <div>
                 Hello {auth.user?.profile.sub}{" "}
-                <button onClick={() => {
+                <button className="btn btn-primary" onClick={() => {
                     void auth.removeUser(); 
                     localStorage.removeItem("token");
                     localStorage.removeItem("token_expiration");
@@ -50,7 +49,7 @@ export const LoginButton = () => {
         return (
         <div>
             Hello {auth.user?.profile.sub}{" "}
-            <button onClick={() => {
+            <button className="btn btn-primary" onClick={() => {
                 
                 void auth.removeUser(); 
                 
@@ -60,7 +59,7 @@ export const LoginButton = () => {
         );
     }
 
-    return <button onClick={() => void auth.signinRedirect()}>Log in</button>;
+    return <button className="btn btn-primary" onClick={() => void auth.signinRedirect()}>Log in</button>;
 }
 
 export default LoginButton;

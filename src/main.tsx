@@ -1,11 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
 import App from "./App.tsx";
 import { AuthProvider, AuthProviderProps } from "react-oidc-context";
 import { QueryClientProvider } from "react-query";
 import { getQueryClient } from './services/queryClient';
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 const uri = import.meta.env.VITE_REDIRECT_URI;
 
