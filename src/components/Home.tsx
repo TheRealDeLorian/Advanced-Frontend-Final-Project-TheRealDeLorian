@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { MobileFooter } from './footers/MobileFooter';
+import { useState } from "react";
+import { NavBar } from "./NavBar";
 
 function App() {
   const [hasError, setHasError] = useState(false);
@@ -11,17 +11,13 @@ function App() {
     throw new Error("Manually thrown error after button click!");
   }
 
-
   return (
     <>
-       <div className="row justify-content-center ">
-
-      </div>
-      <MobileFooter></MobileFooter>
+      <div className="row justify-content-center "></div>
+      <NavBar></NavBar>
       {/*<button className="btn btn-danger" onClick={throwError}>Throw Error</button>*/}
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
