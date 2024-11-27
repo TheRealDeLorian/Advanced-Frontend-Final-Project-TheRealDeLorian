@@ -2,10 +2,10 @@
 
 | Points | Section     | Requirement                                         |
 |--------|-------------|-----------------------------------------------------|
-| 5/20    | General     | Professional, organized and smooth experience       |
+| 6/20    | General     | Professional, organized and smooth experience       |
 | 3/30    | Scope       | is 2-3 times larger than directory                  |
-| 1/5     | Experience  | All experiences mobile-friendly                     |
-| 0/5     | Experience  | 3 instances where elements reorder on smaller screens |
+| 2/5     | Experience  | All experiences mobile-friendly                     |
+| 2/5     | Experience  | 3 instances where elements reorder on smaller screens |
 | 0/5     | Technology  | Use local storage                                   |
 | 5/5     | Technology  | Client-side state stores (e.g., TanStack Query or Context) |
 | 3/5     | Technology  | Toasts / global notifications or alerts             |
