@@ -22,10 +22,12 @@ export const TempleExplorer = () => {
 
   return (
     <>
-      <div className="row justify-content-center">
+      <div className="container row justify-content-center">
         {temples.map((temple) => (
           <>
+          <div className="col">
             <TempleComponent temple={temple}/>
+          </div>
           </>
         ))}
       </div>
