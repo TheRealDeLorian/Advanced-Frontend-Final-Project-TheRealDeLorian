@@ -1,8 +1,8 @@
 export type Temple = {
   id: number;
-  name: string;
-  image: string;
-  description: string;
-  year_built: string;
+  templename: string;
+  pluscode: string;
+  mailaddress: string;
+  photourl: string;
 };
 

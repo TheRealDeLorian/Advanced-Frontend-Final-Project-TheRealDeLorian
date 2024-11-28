@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import LoginButton from "../LoginButton";
 
 export const NavBar = () => {
@@ -35,7 +35,7 @@ export const NavBar = () => {
             <a className="nav-item nav-link mx-auto active" href="#">
               Home{" "}
             </a>
-            <a className="nav-item nav-link mx-auto" href="#">
+            <a className="nav-item nav-link mx-auto" href="/temples">
               Temples
             </a>
             <a className="nav-item nav-link mx-auto" href="#">

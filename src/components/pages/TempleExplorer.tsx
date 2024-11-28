@@ -1,6 +1,7 @@
-import { useState } from 'react'
-import toast from 'react-hot-toast';
-import { useGetAllTemplesQuery } from '../../hooks/templeHooks';
+import { useState } from "react";
+import toast from "react-hot-toast";
+import { useGetAllTemplesQuery } from "../../hooks/templeHooks";
+import { TempleComponent } from "../TempleComponent";
 
 export const TempleExplorer = () => {
   const templesQuery = useGetAllTemplesQuery();
@@ -15,25 +16,22 @@ export const TempleExplorer = () => {
 
   if (templesQuery.isLoading) {
     toast.loading("Loading temples...");
-    return (
-      <div className="">
-        loading...
-      </div>
-    );
+    return <div className="">loading...</div>;
   }
-  if (!temples)
-    return <h3 className="text-center">Unable to get temples</h3>;
+  if (!temples) return <h3 className="text-center">Unable to get temples</h3>;
 
   return (
     <>
-       <div className="row justify-content-center">
+      <div className="row justify-content-center">
         {temples.map((temple) => (
-          <div className="col-lg-2 col-5 m-1 rounded" key={temple.id}>
-            {temple.name}
-          </div>
+          <>
+            <TempleComponent temple={temple}/>
+          </>
         ))}
       </div>
-      <button className="btn btn-danger" onClick={throwError}>Throw Error</button>
+      <button className="btn btn-danger" onClick={throwError}>
+        Throw Error
+      </button>
     </>
-  )
-}
+  );
+};

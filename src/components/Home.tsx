@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { NavBar } from "./NavBar";
 
 function App() {
   const [hasError, setHasError] = useState(false);
@@ -13,7 +12,6 @@ function App() {
 
   return (
     <>
-      <NavBar></NavBar>
       <div className="container">
         {/* <UserSummary/> This component will be a little card-like thing that contains streak info, last temple visited, maybe upcoming visits, etc.  */}
         <button className="btn btn-danger ">Click here to start </button>

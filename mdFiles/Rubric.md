@@ -12,7 +12,7 @@
 | 5/5     | Technology  | Error handling (both on API requests and render errors) |
 | 2/5     | Technology  | Network calls that read and write data              |
 | 5/5     | Technology  | Developer type helping (TypeScript)                 |
-| 1/5     | Technology  | 10+ pages or views                                  |
+| 3/5     | Technology  | 10+ pages or views                                  |
 | 5/5     | Technology  | CI/CD pipeline                                      |
 | 0/5     | Technology  | Tests run in pipeline, pipeline aborts if they fail |
 | 5/5     | Technology  | Linting in pipeline                                 |
@@ -20,4 +20,4 @@
 | 0/12    | Technology  | 4+ generic layout components                        |
 | 6/10    | Technology  | Authentication and user account support             |
 | 0/5     | Technology  | Authorized pages and public pages                   |
-| 45/146  | Total       |                                                     |
+| 52/146  | Total       |                                                     |

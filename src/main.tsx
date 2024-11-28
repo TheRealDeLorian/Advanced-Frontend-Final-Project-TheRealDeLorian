@@ -5,6 +5,7 @@ import { AuthProvider, AuthProviderProps } from "react-oidc-context";
 import { QueryClientProvider } from "react-query";
 import { getQueryClient } from './services/queryClient';
 import 'bootstrap/dist/css/bootstrap.css';
+import {BrowserRouter as Router} from 'react-router-dom'
 
 const uri = import.meta.env.VITE_REDIRECT_URI;
 
@@ -27,6 +28,7 @@ const oidcConfig: AuthProviderProps = {
 const queryClient = getQueryClient();
 
 createRoot(document.getElementById("root")!).render(
+  <Router>
   <StrictMode>
     <AuthProvider {...oidcConfig}>
     <QueryClientProvider client={queryClient}>
@@ -34,4 +36,5 @@ createRoot(document.getElementById("root")!).render(
       </QueryClientProvider>
     </AuthProvider>
   </StrictMode>
+  </Router>
 );
