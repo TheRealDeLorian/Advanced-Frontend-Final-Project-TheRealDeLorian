@@ -15,7 +15,7 @@ function App() {
       <Toaster />
       <NavBar></NavBar>
       <ErrorBoundary fallback={<div>Oops! An error has occurred.</div>}>
-      <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/temples" element={<TempleExplorer />} />
           <Route path="/settings" element={<Settings />} />
