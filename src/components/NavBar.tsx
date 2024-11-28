@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LoginButton from "../LoginButton";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,9 @@ export const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-md mx-2 navbar-light bg-light">
-        <a className="col navbar-brand" href="#">
+        <Link className="col navbar-brand" to="#">
           SacredSteps
-        </a>
+        </Link>
         <div className="mx-2">
           <LoginButton />
         </div>
@@ -32,15 +33,15 @@ export const NavBar = () => {
           id="navbarNavAltMarkup"
         >
           <div className="navbar-nav">
-            <a className="nav-item nav-link mx-auto active" href="#">
+            <Link className="nav-item nav-link mx-auto active" to="#">
               Home{" "}
-            </a>
-            <a className="nav-item nav-link mx-auto" href="/temples">
+            </Link>
+            <Link className="nav-item nav-link mx-auto" to="/temples">
               Temples
-            </a>
-            <a className="nav-item nav-link mx-auto" href="#">
+            </Link>
+            <Link className="nav-item nav-link mx-auto" to="#">
               Map
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
