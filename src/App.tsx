@@ -10,6 +10,7 @@ import { TempleExplorer } from "./components/pages/TempleExplorer";
 
 
 function App() {
+  
   return (
     <>
       <Toaster />

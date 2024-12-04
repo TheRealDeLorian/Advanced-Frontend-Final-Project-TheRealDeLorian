@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useGetAllTemplesQuery } from "../../hooks/templeHooks";
 import { TempleComponent } from "../TempleComponent";
@@ -6,6 +6,11 @@ import { TempleComponent } from "../TempleComponent";
 export const TempleExplorer = () => {
   const templesQuery = useGetAllTemplesQuery();
   const temples = templesQuery.data;
+  useEffect(() => {
+    localStorage.setItem("temples", JSON.stringify(temples));
+    console.log(temples);
+  }, [temples]);
+
   const [hasError, setHasError] = useState(false);
   const throwError = () => {
     setHasError(true);
@@ -25,9 +30,9 @@ export const TempleExplorer = () => {
       <div className="container row justify-content-center">
         {temples.map((temple) => (
           <>
-          <div className="col">
-            <TempleComponent temple={temple}/>
-          </div>
+            <div className="col">
+              <TempleComponent temple={temple} />
+            </div>
           </>
         ))}
       </div>
