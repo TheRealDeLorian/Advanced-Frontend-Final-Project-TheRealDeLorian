@@ -1,5 +1,4 @@
 import { useAuth } from "react-oidc-context";
-import { SignupButton } from "./SignupButton";
 
 export const LoginButton = () => {
   const auth = useAuth();

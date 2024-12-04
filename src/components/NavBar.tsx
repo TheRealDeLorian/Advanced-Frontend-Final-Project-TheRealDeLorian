@@ -1,7 +1,6 @@
 import { useState } from "react";
 import LoginButton from "./LoginButton";
 import { Link } from "react-router-dom";
-import { SignupButton } from "./SignupButton";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

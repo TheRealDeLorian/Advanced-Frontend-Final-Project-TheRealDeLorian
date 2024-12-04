@@ -1,4 +1,4 @@
-- [ ] Users can create an account
+- [x] Users can create an account
 - [x] Users can log in
 - [x] Site is accessible from a duckdns subdomain
 - [x] Users are brought to an error page if something goes wrong

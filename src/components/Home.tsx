@@ -1,6 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getUserFromCookie } from "../authentication/getUserFromCookie";
+import LoginButton from "./LoginButton";
+import { People } from "../data/People";
+import { Link } from "react-router-dom";
 
-function App() {
+export const Home = () => {
+  const [currentLoggedInUser, setCurrentLoggedInUser] = useState<People | undefined>(undefined);
+  
   const [hasError, setHasError] = useState(false);
   const throwError = () => {
     setHasError(true);
@@ -10,6 +16,18 @@ function App() {
     throw new Error("Manually thrown error after button click!");
   }
 
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const user = await getUserFromCookie();
+        setCurrentLoggedInUser(user);
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      }
+    };
+
+    fetchUser();
+  }, []);
   return (
     <>
       <div className="container">
@@ -17,11 +35,16 @@ function App() {
         <div>
           <h2 className="content-center">Edify your temple journey</h2>
         </div>
-        <button className="btn btn-secondary ">Click here to start </button>
+        {currentLoggedInUser ? (
+          <Link to="/new" className="btn btn-secondary " >Click here to start </Link>
+        ) : (
+          <>
+            <span>Click here to </span> <LoginButton />
+          </>
+        )}
       </div>
       {/*<button className="btn btn-danger" onClick={throwError}>Throw Error</button>*/}
     </>
   );
 }
 
-export default App;
