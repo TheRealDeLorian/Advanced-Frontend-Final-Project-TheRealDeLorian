@@ -18,6 +18,6 @@
 | 5/5     | Technology  | Linting in pipeline                                 |
 | 0/9     | Technology  | 3+ generic form input components                    |
 | 0/12    | Technology  | 4+ generic layout components                        |
-| 6/10    | Technology  | Authentication and user account support             |
+| 10/10    | Technology  | Authentication and user account support             |
 | 0/5     | Technology  | Authorized pages and public pages                   |
 | 52/146  | Total       |                                                     |
