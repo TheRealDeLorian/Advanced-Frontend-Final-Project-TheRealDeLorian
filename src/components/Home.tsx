@@ -14,7 +14,10 @@ function App() {
     <>
       <div className="container">
         {/* <UserSummary/> This component will be a little card-like thing that contains streak info, last temple visited, maybe upcoming visits, etc.  */}
-        <button className="btn btn-danger ">Click here to start </button>
+        <div>
+          <h2 className="content-center">Edify your temple journey</h2>
+        </div>
+        <button className="btn btn-secondary ">Click here to start </button>
       </div>
       {/*<button className="btn btn-danger" onClick={throwError}>Throw Error</button>*/}
     </>

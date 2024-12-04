@@ -2,15 +2,13 @@ import { Toaster } from "react-hot-toast";
 import { Routes, Route } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Home from "./components/Home";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { Settings } from "./components/pages/Settings";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { Settings } from "./pages/Settings";
 import { NavBar } from "./components/NavBar";
-import { TempleExplorer } from "./components/pages/TempleExplorer";
-
+import { TempleExplorer } from "./pages/TempleExplorer";
 
 function App() {
-  
   return (
     <>
       <Toaster />

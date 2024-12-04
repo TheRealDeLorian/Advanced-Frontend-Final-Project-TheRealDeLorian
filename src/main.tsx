@@ -13,7 +13,7 @@ if (!uri) console.log("REDIRECT_URI is not set");
 else console.log("REDIRECT_URI is: " + uri);
 
 const oidcConfig: AuthProviderProps = {
-  authority: "https://auth.snowse.duckdns.org/realms/advanced-frontend/",
+  authority: "https://auth.snowse.duckdns.org/realms/dorian-final/",
   client_id: "dorian-demo2",
   redirect_uri: `${uri}`,
   onSigninCallback: async (user) => {

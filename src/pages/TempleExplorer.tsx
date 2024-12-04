@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { useGetAllTemplesQuery } from "../../hooks/templeHooks";
-import { TempleComponent } from "../TempleComponent";
+import { useGetAllTemplesQuery } from "../hooks/templeHooks";
+import { TempleComponent } from "../components/TempleComponent";
 
 export const TempleExplorer = () => {
   const templesQuery = useGetAllTemplesQuery();

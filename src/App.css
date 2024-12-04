@@ -4,3 +4,11 @@
   width: 100%;
   z-index: 10;
 } */
+
+a {
+  cursor: pointer; /* Changes the cursor to a hand pointer */
+}
+
+a:hover {
+  color: blue; /* Optional: add a color change for hover effect */
+}
