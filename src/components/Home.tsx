@@ -21,7 +21,7 @@ export const Home = () => {
         </div>
           <Link to="/new" className="btn btn-secondary " >Click here to start </Link>
       </div>
-      {/*<button className="btn btn-danger" onClick={throwError}>Throw Error</button>*/}
+      <button className="btn btn-danger" onClick={throwError}>Throw Error</button>
     </>
   );
 }

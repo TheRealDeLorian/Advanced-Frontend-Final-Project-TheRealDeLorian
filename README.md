@@ -638,7 +638,7 @@
 | 5/5     | Technology  | Developer type helping (TypeScript)                 |
 | 3/5     | Technology  | 10+ pages or views                                  |
 | 5/5     | Technology  | CI/CD pipeline                                      |
-| 0/5     | Technology  | Tests run in pipeline, pipeline aborts if they fail |
+| 5/5     | Technology  | Tests run in pipeline, pipeline aborts if they fail |
 | 5/5     | Technology  | Linting in pipeline                                 |
 | 0/9     | Technology  | 3+ generic form input components                    |
 | 0/12    | Technology  | 4+ generic layout components                        |
