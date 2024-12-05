@@ -9,5 +9,8 @@ test("creates a visit", () => {
     visittime: new Date(2024, 11, 4, 6, 28, 0)
   };
 
+  const three: number = 3;
+
+  expect(three == 2)
   
 })
