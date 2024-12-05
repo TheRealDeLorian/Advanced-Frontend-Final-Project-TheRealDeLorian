@@ -1,27 +1,26 @@
-import { useEffect, useState } from "react";
-import toast from "react-hot-toast";
+import { useEffect } from "react";
 import { useGetAllTemplesQuery } from "../hooks/templeHooks";
 import { TempleComponent } from "../components/TempleComponent";
 
 export const TempleExplorer = () => {
   const templesQuery = useGetAllTemplesQuery();
   const temples = templesQuery.data;
+  
   useEffect(() => {
     localStorage.setItem("temples", JSON.stringify(temples));
     console.log(temples);
   }, [temples]);
 
-  const [hasError, setHasError] = useState(false);
-  const throwError = () => {
-    setHasError(true);
-  };
-  if (hasError) {
-    throw new Error("Manually thrown error after button click!");
-  }
+  // const [hasError, setHasError] = useState(false);
+  // const throwError = () => {
+  //   setHasError(true);
+  // };
+  // if (hasError) {
+  //   throw new Error("Manually thrown error after button click!");
+  // }
 
   if (templesQuery.isLoading) {
-    toast.loading("Loading temples...");
-    return <div className="">loading...</div>;
+    return <div className="">Loading temples...</div>;
   }
   if (!temples) return <h3 className="text-center">Unable to get temples</h3>;
 
@@ -36,9 +35,9 @@ export const TempleExplorer = () => {
           </>
         ))}
       </div>
-      <button className="btn btn-danger" onClick={throwError}>
+      {/* <button className="btn btn-danger" onClick={throwError}>
         Throw Error
-      </button>
+      </button> */}
     </>
   );
 };

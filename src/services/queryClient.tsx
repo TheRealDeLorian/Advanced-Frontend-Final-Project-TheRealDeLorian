@@ -2,7 +2,6 @@ import toast from "react-hot-toast";
 import { QueryClient } from "react-query";
 
 
-//queries implement global error handling, integrated with toasts
 const queryClient = new QueryClient({
     defaultOptions: {
       queries: {
