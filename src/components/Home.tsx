@@ -29,7 +29,7 @@ export const Home = () => {
         <div>
           <h2 className="content-center">Edify your temple journey</h2>
         </div>
-        {location ? `It looks like you are near the  Temple` : ""}
+        {location ? `It looks like you are near the ${location.coords.latitude} ${location.coords.longitude}` : ""}
           <Link to="/new" className="btn btn-secondary " >Click here to start </Link>
       </div>
     </>
