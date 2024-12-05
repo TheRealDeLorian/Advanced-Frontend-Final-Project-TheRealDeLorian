@@ -9,8 +9,13 @@ test("creates a visit", () => {
     visittime: new Date(2024, 11, 4, 6, 28, 0)
   };
 
-  const three: number = 3;
+    const expectedVisit: Visit = {
+      id: 2,
+      note: "fds",
+      templeid: 2,
+      visittime: new Date(2024, 11, 4, 6, 28, 0)
+    };
 
-  expect(three == 2)
+  expect(visit).toEqual(expectedVisit)
   
 })
