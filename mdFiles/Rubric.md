@@ -3,7 +3,7 @@
 | Points | Section     | Requirement                                         |
 |--------|-------------|-----------------------------------------------------|
 | 6/20    | General     | Professional, organized and smooth experience       |
-| 3/30    | Scope       | is 2-3 times larger than directory                  |
+| 5/30    | Scope       | is 2-3 times larger than directory                  |
 | 2/5     | Experience  | All experiences mobile-friendly                     |
 | 2/5     | Experience  | 3 instances where elements reorder on smaller screens |
 | 5/5     | Technology  | Use local storage                                   |
@@ -20,4 +20,4 @@
 | 0/12    | Technology  | 4+ generic layout components                        |
 | 10/10    | Technology  | Authentication and user account support             |
 | 0/5     | Technology  | Authorized pages and public pages                   |
-| 52/146  | Total       |                                                     |
+| 63/146  | Total       |                                                     |
