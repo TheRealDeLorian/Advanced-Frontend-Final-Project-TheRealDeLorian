@@ -16,8 +16,9 @@ export const useGeoLocation = () => {
         { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 }
       );
     } else {
-      setError('Geolocation is not supported by this browser.');
-      throw new Error(error);
+      const errorMessage = 'Geolocation is not supported by this browser.';
+      setError(errorMessage);
+      throw new Error(errorMessage);
     }
   }, []);
 

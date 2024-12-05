@@ -1,4 +1,3 @@
-import {Visit} from "../src/data/Visit"
 import {expect, test} from 'vitest'
 import {isWithinPoint2MilesOfTemple} from '../src/logic/locationCalculator'
 
