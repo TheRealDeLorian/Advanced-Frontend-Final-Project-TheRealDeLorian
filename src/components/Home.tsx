@@ -1,25 +1,39 @@
-// import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useGeoLocation } from "../hooks/geoLocationHook";
-// import { findWhichTempleUserIsNear } from "../logic/locationCalculator";
-// import { Temple } from "../data/Temple";
+import { findWhichTempleUserIsNear } from "../logic/locationCalculator";
+import { Temple } from "../data/Temple";
+import { useGetAllTemplesQuery } from "../hooks/templeHooks";
 
 export const Home = () => {
-  // const [currentTemple, setCurrentTemple] = useState<Temple | undefined>(undefined);
+  const [currentTemple, setCurrentTemple] = useState<Temple | undefined>(undefined);
+  
+  const templesQuery = useGetAllTemplesQuery();
+  const temples = templesQuery.data;
 
-  // const temples: Temple[] = [
-  //   {id: 1, templename: 'Salt Lake City', lat: '40.7704381', long: '-111.8918202', mailaddress: '50 N W Temple St, Salt Lake City, UT 84150', photourl: ""},
-  //   {id: 2, templename: 'Oquirrh Mountain', lat: '40.5510973', long: '-111.9874258', mailaddress: '11022 4000 W, South Jordan, UT 84009', photourl: ""},
-  //   {id: 3, templename: 'Taylorsville', lat: '40.6666244', long: '-111.9542623', mailaddress: '2603 W 4700 S, Salt Lake City, UT 84129', photourl: ""}
-  // ]
+  const { location, error } = useGeoLocation();
+
+  useEffect(() => {
+    if (temples) {
+      localStorage.setItem("temples", JSON.stringify(temples));
+    }
+  }, [temples]);
   
-  const {location, error} = useGeoLocation();
+  useEffect(() => {
+    if (location && temples) {
+      const temple = findWhichTempleUserIsNear(
+        `${location.coords.latitude}`,
+        `${location.coords.longitude}`,
+        temples
+      );
+      setCurrentTemple(temple);
+    }
+  }, [location, temples]);
+  
+  if (templesQuery.isLoading) return <div className="">Loading temples...</div>;
   if (error) throw new Error(error);
+  if (!temples) return <h3 className="text-center">Unable to get temples</h3>;
   if (!location) return <div>Fetching location...</div>;
-  
-  // useEffect(() =>{
-  //   setCurrentTemple(findWhichTempleUserIsNear(`${location.coords.latitude}`, `${location.coords.longitude}`, temples));
-  // }, []); 
 
 
   return (
@@ -29,7 +43,7 @@ export const Home = () => {
         <div>
           <h2 className="content-center">Edify your temple journey</h2>
         </div>
-        {location ? `It looks like you are near the ${location.coords.latitude} ${location.coords.longitude}` : ""}
+        {currentTemple ? `It looks like you are near the ${currentTemple.templename} Temple. ` : `Coords: ${location.coords.latitude} ${location.coords.longitude}`}
           <Link to="/new" className="btn btn-secondary " >Click here to start </Link>
       </div>
     </>

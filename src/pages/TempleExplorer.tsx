@@ -8,7 +8,6 @@ export const TempleExplorer = () => {
   
   useEffect(() => {
     localStorage.setItem("temples", JSON.stringify(temples));
-    console.log(temples);
   }, [temples]);
 
   // const [hasError, setHasError] = useState(false);
