@@ -10,7 +10,7 @@ export const templeService = {
     try {
       const url = baseUrl + "/temples";
       const response = await axios.get(url);
-      console.log("data from auth: ", response.data);
+      console.log("temples: ", response.data);
       return response.data;
     } catch (error) {
       console.log('Failed to fetch temples:', error);
