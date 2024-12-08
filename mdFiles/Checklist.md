@@ -12,4 +12,4 @@
 
 
 - [ ] Design home page to look how I want it 
-- [ ] Make database schema for more detailed temples
+- [x] Make database schema for more detailed temples

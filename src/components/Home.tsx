@@ -6,8 +6,14 @@ import { Temple } from "../data/Temple";
 import { useGetAllTemplesQuery } from "../hooks/templeHooks";
 
 export const Home = () => {
-  const [currentTemple, setCurrentTemple] = useState<Temple | undefined>(undefined);
-  
+  const [currentTemple, setCurrentTemple] = useState<Temple | undefined>(
+    undefined
+  );
+  const [userLat, setUserLat] = useState<number>();
+  const [userLong, setUserLong] = useState<number>();
+  const [spoofMode, setSpoofMode] = useState(false);
+
+
   const templesQuery = useGetAllTemplesQuery();
   const temples = templesQuery.data;
 
@@ -18,23 +24,30 @@ export const Home = () => {
       localStorage.setItem("temples", JSON.stringify(temples));
     }
   }, [temples]);
-  
+
   useEffect(() => {
     if (location && temples) {
+      if (!spoofMode) {
+        setUserLat(location.coords.latitude);
+        setUserLong(location.coords.longitude);
+      }
       const temple = findWhichTempleUserIsNear(
-        `${location.coords.latitude}`,
-        `${location.coords.longitude}`,
+        `${userLat}`,
+        `${userLong}`,
         temples
       );
       setCurrentTemple(temple);
     }
-  }, [location, temples]);
-  
-  if (templesQuery.isLoading) return <div className="">Loading temples...</div>;
-  if (error) throw new Error(error);
-  if (!temples) return <h3 className="text-center">Unable to get temples</h3>;
-  if (!location) return <div>Fetching location...</div>;
+  }, [location, temples, spoofMode]);
 
+  if (error) throw new Error(error);
+
+  const spoofLocation = () => {
+    console.log("spoofing location...");
+    setSpoofMode(true);
+    setUserLat(40.7704381);
+    setUserLong(-111.8918202);
+  }
 
   return (
     <>
@@ -43,10 +56,27 @@ export const Home = () => {
         <div>
           <h2 className="content-center">Edify your temple journey</h2>
         </div>
-        {currentTemple ? `It looks like you are near the ${currentTemple.templename} Temple. ` : `Coords: ${location.coords.latitude} ${location.coords.longitude}`}
-          <Link to="/new" className="btn btn-secondary " >Click here to start </Link>
+        {currentTemple ? (
+          <>
+            <div>
+              It looks like you are near the {currentTemple.templename} Temple.{" "}
+            </div>
+            <Link to="/new" className="btn btn-secondary ">
+              Take a selfie
+            </Link>
+          </>
+        ) : (
+          <>
+            <div>
+              You are not near a temple.{" "}
+              <Link to="/temples" className="btn btn-info">
+                Click here
+              </Link>
+              to find one to <span onClick={spoofLocation}>visit</span>
+            </div>
+          </>
+        )}
       </div>
     </>
   );
-}
-
+};
