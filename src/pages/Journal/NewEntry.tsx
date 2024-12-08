@@ -2,11 +2,12 @@ import { useLocation } from "react-router-dom";
 import { SelfieInput } from "../../components/customInputs/SelfieInput";
 import { Visit } from "../../data/Visit";
 import { useState } from "react";
+import { useCreateVisitMutation } from "../../hooks/visitHooks";
 
 export const NewEntry = () => {
   const location = useLocation();
   const { temple } = location.state || {};
-
+  const createVisitMutation = useCreateVisitMutation();
   const [journalEntry, setJournalEntry] = useState('');
   const handleJournalEntryChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setJournalEntry(e.target.value);
@@ -16,13 +17,21 @@ export const NewEntry = () => {
     e.preventDefault();
 
     const newEntry: Visit = {
-      id: Math.random(),
+      id: Math.random() * 10**17,
       note: journalEntry,
       templeid: temple.id,
       visittime: new Date(),
     };
 
     console.log("New Entry:", newEntry);
+    createVisitMutation.mutate(newEntry, {
+      onSuccess: () => {
+        console.log("Visit added successfully!");
+      },
+      onError: (error) => {
+        console.error("Error adding visit:", error);
+      },
+    });
   };
 
   return (
