@@ -1,7 +1,7 @@
 import { visitService } from "../services/visitService";
 import { useQuery } from "react-query";
 import { useMutation, useQueryClient } from "react-query";
-import { Visit } from "../data/Visit";
+import  { Visit } from "../data/Visit";
 
 export const visitKeys = {
   visitsKey: ["visitsKey"] as const,

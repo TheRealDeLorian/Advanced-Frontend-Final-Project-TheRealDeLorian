@@ -1,7 +1,7 @@
 export type Visit = {
   id: number;
-  visittime: Date;
-  note: string;
-  templeid: number;
+  visittime: string | null; 
+  note: string | null
+  personid: number | null; 
+  templeid: number | null;
 };
-

@@ -6,7 +6,7 @@ const baseUrl = import.meta.env.VITE_API_URL + "/api";
 export const visitService = {
   getVisitsByUserId: async (id: number): Promise<Visit[]> => {
     try {
-      const url = baseUrl + `/visits/${id}`;
+      const url = baseUrl + `/Visit/${id}`;
       const response = await axios.get(url);
       console.log("visits: ", response.data);
       return response.data;
@@ -18,7 +18,7 @@ export const visitService = {
 
   addNewVisit: async (visit: Visit): Promise<Visit> => {
     try {
-      const url = baseUrl + `/visits`;
+      const url = baseUrl + `/Visit`;
       const response = await axios.post(url, visit);
       console.log("Visit added:", response.data);
       return response.data;
