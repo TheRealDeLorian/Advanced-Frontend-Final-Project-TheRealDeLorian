@@ -1,44 +1,42 @@
-import { useState } from 'react';
-import { SelfieInput } from '../../components/customInputs/SelfieInput'
-import { Visit } from '../../data/Visit';
-import TextInput from '../../components/customInputs/TextInput';
+import { useLocation } from "react-router-dom";
+import { SelfieInput } from "../../components/customInputs/SelfieInput";
+import { Visit } from "../../data/Visit";
+import { useState } from "react";
 
-interface NewEntryProps {
-  templeId: number
-}
+export const NewEntry = () => {
+  const location = useLocation();
+  const { temple } = location.state || {};
 
-export const NewEntry = ({templeId}: NewEntryProps) => {
-  const [visit, setVisit] = useState<Visit>();
   const [journalEntry, setJournalEntry] = useState('');
   const handleJournalEntryChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setJournalEntry(e.target.value);
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
     const newEntry: Visit = {
       id: Math.random(),
       note: journalEntry,
-      templeid: templeId,
-      visittime: new Date()
-    }
+      templeid: temple.id,
+      visittime: new Date(),
+    };
 
-    
-  }
+    console.log("New Entry:", newEntry);
+  };
 
   return (
     <div>
-    <form onSubmit={handleSubmit}> 
-      {/*custom inputs here. we want
-      start by uploading a selfie
-      temple (gets current location and finds nearest temples. if you're too far it will tell you to go closer)
-      date (defaults to today)
-      */}
-
-        <TextInput id="entry" name="entry"  />
-
-      <SelfieInput/>
-      <textarea value={journalEntry} onChange={handleJournalEntryChange} />
-    </form>
+      <h2>{temple.templename} Temple</h2>
+      <form onSubmit={handleSubmit}>
+        <SelfieInput />
+        <textarea 
+          value={journalEntry} 
+          onChange={handleJournalEntryChange} 
+          placeholder="Write about your experience..."
+        />
+        <button type="submit">Submit</button>
+      </form>
     </div>
-  )
-}
+  );
+};

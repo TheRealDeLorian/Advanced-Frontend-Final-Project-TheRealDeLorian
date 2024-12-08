@@ -61,8 +61,8 @@ export const Home = () => {
             <div>
               It looks like you are near the {currentTemple.templename} Temple.{" "}
             </div>
-            <Link to="/new" className="btn btn-secondary ">
-              Take a selfie
+            <Link to="/new" state={{temple: currentTemple}} className="btn btn-secondary ">
+              Make a new entry
             </Link>
           </>
         ) : (
