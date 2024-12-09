@@ -13,3 +13,4 @@ export const useGetAllTemplesQuery = () => {
     refetchInterval: 30000,
   });
 };
+

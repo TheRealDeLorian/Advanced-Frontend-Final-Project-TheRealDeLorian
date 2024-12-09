@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LoginButton from "./LoginButton";
+import LoginButton from "../LoginButton";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {
@@ -33,6 +33,9 @@ export const NavBar = () => {
             <Link className="nav-item nav-link mx-auto active" to="/">
               Home
             </Link>
+            <Link className="nav-item nav-link mx-auto" to="/journal">
+              My Journal
+            </Link>
             <Link className="nav-item nav-link mx-auto" to="/temples">
               Temples
             </Link>
@@ -41,9 +44,9 @@ export const NavBar = () => {
             </Link>
           </div>
         </div>
-            <div className="mx-2">
-              <LoginButton />
-            </div>
+        <div className="mx-2">
+          <LoginButton />
+        </div>
       </nav>
     </>
   );

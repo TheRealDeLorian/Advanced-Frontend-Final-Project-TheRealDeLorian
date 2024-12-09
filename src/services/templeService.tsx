@@ -8,7 +8,7 @@ export const templeService = {
 
   getAllTemples: async (): Promise<Temple[]> => {
     try {
-      const url = baseUrl + "/temples";
+      const url = baseUrl + "/Temple";
       const response = await axios.get(url);
       console.log("temples: ", response.data);
       return response.data;

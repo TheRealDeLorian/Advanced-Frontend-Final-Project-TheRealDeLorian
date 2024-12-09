@@ -18,7 +18,7 @@ export async function getUserFromCookie() {
       });
 
       const myUser: Person = {
-        id: (payload.Id as number) ?? "",
+        id: 1, //hard-coded. couldn't figure out how to do it without hooks rules getting mad. TODO: fix this
         fname: (payload.given_name as string) ?? "",
         lname: (payload.family_name as string) ?? "",
         email: (payload.email as string) ?? "",

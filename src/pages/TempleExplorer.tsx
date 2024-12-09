@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useGetAllTemplesQuery } from "../hooks/templeHooks";
-import { TempleComponent } from "../components/TempleComponent";
+import { TempleComponent } from "../components/customLayouts/TempleComponent";
 
 export const TempleExplorer = () => {
   const templesQuery = useGetAllTemplesQuery();
   const temples = templesQuery.data;
-  
+
   useEffect(() => {
     localStorage.setItem("temples", JSON.stringify(temples));
   }, [temples]);
