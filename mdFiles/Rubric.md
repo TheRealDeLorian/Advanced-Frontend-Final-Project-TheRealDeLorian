@@ -30,7 +30,7 @@ Goal by Sunday night:
 | Points | Section     | Requirement                                         |
 |--------|-------------|-----------------------------------------------------|
 | 6/20   | General     | Professional, organized and smooth experience       |
-| 10/30   | Scope       | is 2-3 times larger than directory                  |
+| 10/30  | Scope       | is 2-3 times larger than directory                  |
 | 0/5    | Experience  | All experiences mobile-friendly                     |
 | 1/5    | Experience  | 3 instances where elements reorder on smaller screens |
 | 5/5    | Technology  | Use local storage                                   |
