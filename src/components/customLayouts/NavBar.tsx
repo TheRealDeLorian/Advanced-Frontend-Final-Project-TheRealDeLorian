@@ -12,7 +12,7 @@ export const NavBar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-md mx-2 navbar-light bg-light">
-        <Link className="col navbar-brand" to="#">
+        <Link className="col navbar-brand" to="/">
           SacredSteps
         </Link>
         <button

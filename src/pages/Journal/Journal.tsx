@@ -33,6 +33,7 @@ export const Journal: React.FC = () => {
 
   return (
     <>
+    <h3>Your journal entries</h3>
       <div className="row">
         {visits.map(visit => (
           <Entry key={visit.id} visit={visit} onDelete={deleteVisit} />
