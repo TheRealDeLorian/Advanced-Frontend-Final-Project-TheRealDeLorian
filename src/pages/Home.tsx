@@ -26,6 +26,7 @@ export const Home = () => {
 
   useEffect(() => {
     if (location && temples) {
+      console.log(`Your coords: ${location.coords.latitude}, ${location.coords.longitude}`);
       if (!spoofMode) {
         setUserLat(location.coords.latitude);
         setUserLong(location.coords.longitude);
