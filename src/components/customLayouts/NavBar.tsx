@@ -1,5 +1,5 @@
 import { useState } from "react";
-import LoginButton from "../LoginButton";
+import LoginButton from "../../authentication/LoginButton";
 import { Link } from "react-router-dom";
 
 export const NavBar = () => {

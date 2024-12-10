@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useGetAllTemplesQuery } from "../hooks/templeHooks";
 import { TempleComponent } from "../components/customLayouts/TempleComponent";
 
@@ -10,13 +10,13 @@ export const TempleExplorer = () => {
     localStorage.setItem("temples", JSON.stringify(temples));
   }, [temples]);
 
-  // const [hasError, setHasError] = useState(false);
-  // const throwError = () => {
-  //   setHasError(true);
-  // };
-  // if (hasError) {
-  //   throw new Error("Manually thrown error after button click!");
-  // }
+  const [hasError, setHasError] = useState(false);
+  const throwError = () => {
+    setHasError(true);
+  };
+  if (hasError) {
+    throw new Error("Manually thrown error after button click!");
+  }
 
   if (templesQuery.isLoading) {
     return <div className="">Loading temples...</div>;
@@ -25,6 +25,7 @@ export const TempleExplorer = () => {
 
   return (
     <>
+    <h3 onClick={throwError}>All Temples</h3>
       <div className="container row justify-content-center">
         {temples.map((temple) => (
           <>
