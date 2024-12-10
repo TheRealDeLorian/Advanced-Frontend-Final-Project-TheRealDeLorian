@@ -81,7 +81,7 @@ export const NewEntry = () => {
           justifyContent: "space-between",
         }}
       >
-        <SelfieInput />
+        {/* <SelfieInput /> */}
         <textarea
           value={journalEntry}
           onChange={handleJournalEntryChange}
