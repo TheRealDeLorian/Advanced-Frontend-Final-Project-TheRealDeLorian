@@ -15,7 +15,7 @@ test("if you're near a certain temple, function returns the temple. If no temple
   const userLat2 = "40.769781"; //Temple Square just south of the temple
   const userLong2 = "-111.892281";
 
-  expect(findWhichTempleUserIsNear(userLat, userLong, temples)).toEqual(temples[1])//Should be Taylorsville
+  expect(findWhichTempleUserIsNear(userLat, userLong, temples)).toEqual(temples[2])//Should be Taylorsville
   expect(findWhichTempleUserIsNear(userLat2, userLong2, temples)).toEqual(temples[0]) //Should be Salt Lake
 
 
