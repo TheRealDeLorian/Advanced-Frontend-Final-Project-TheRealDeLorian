@@ -30,7 +30,7 @@ export const SelfieInput = () => {
         style={{ display: "none" }} 
       />
 
-      <button onClick={openCamera} className="btn btn-primary">
+      <button type="button" onClick={openCamera} className="btn btn-primary">
         Open Camera
       </button>
 
