@@ -9,7 +9,6 @@ import { NavBar } from "./components/customLayouts/NavBar";
 import { TempleExplorer } from "./pages/TempleExplorer";
 import { NewEntry } from "./pages/Journal/NewEntry";
 import {Journal} from "./pages/Journal/Journal";
-import { PrivateRoute } from "./authentication/PrivateRoute";
 
 function App() {
   return (
@@ -28,8 +27,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/temples" element={<TempleExplorer />} />
           <Route path="/settings" element={<Settings />} />
-          <Route path="/new" element={<PrivateRoute><NewEntry /></PrivateRoute>} />
-          <Route path="/journal" element={<PrivateRoute><Journal /></PrivateRoute>} />
+          <Route path="/new" element={<NewEntry />} />
+          <Route path="/journal" element={<Journal />} />
         </Routes>
       </ErrorBoundary>
     </>
