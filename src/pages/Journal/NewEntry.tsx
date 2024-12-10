@@ -1,5 +1,4 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { SelfieInput } from "../../components/customInputs/SelfieInput";
 import { Visit } from "../../data/Visit";
 import { useCreateVisitMutation } from "../../hooks/visitHooks";
 import { getUserFromCookie } from "../../authentication/getUserFromCookie";
